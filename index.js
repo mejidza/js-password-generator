@@ -34,6 +34,9 @@ checkboxes.map(item => {
 
 
 function getRandomElemFromArray(arr){
+    if (arr.length == 0) {
+        return ""
+    }
     let randomValue =  Math.round(Math.random() * arr.length)
     console.log(randomValue)
     while(!arr[randomValue]){
