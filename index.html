@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>JS password generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title-text">Password generator</h1>
+      <div class="pass-gen-items">
+        <input class="pass-gen-input" type="text" />
+        <p class="section-text length-section-text">LENGTH</p>
+        <div class="length-pass-container">
+           
+        <p class="length-text">4</p>
+        <input id="fader" type="range" class="length-pass-gen" min="4" max="32" />
+        <p class="length-text">32</p>
+    </div>
+        <p class="section-text length-section-text">SETTINGS</p>
+
+
+        <div class="settings-option">
+
+          <div class="settings-item">
+            <p class="settings-text">Include uppercase</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+          <div class="settings-item">
+            <p class="settings-text">Include lowercase</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+          <div class="settings-item">
+            <p class="settings-text">Include numbers</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+          <div class="settings-item">
+            <p class="settings-text">Include symbols</p>
+            <div class="switch-btn switch-on"></div>
+          </div>
+          <button class="pass-gen-button">GENERATE PASSWORD</button>
+
+
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
