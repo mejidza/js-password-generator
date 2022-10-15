@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css"/>
     <title>JS password generator</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="title-text">Password generator</h1>
-      <div class="pass-gen-items">
-        <input class="pass-gen-input" type="text" />
-        <p class="section-text length-section-text">LENGTH</p>
+</head>
+<body>
+<div class="container">
+    <h1 class="title-text">Password generator</h1>
+    <div class="pass-gen-items">
+        <input class="pass-gen-input" type="text" id="password"/>
+        <p class="section-text length-section-text">LENGTH: <span id="currentRange">14</span></p>
         <div class="length-pass-container">
-           
-        <p class="length-text">4</p>
-        <input id="fader" type="range" class="length-pass-gen" min="4" max="32" />
-        <p class="length-text">32</p>
-    </div>
+
+            <p class="length-text">4</p>
+            <input id="fader" type="range" class="length-pass-gen" min="4" max="32"/>
+            <p class="length-text">32</p>
+        </div>
         <p class="section-text length-section-text">SETTINGS</p>
 
 
         <div class="settings-option">
 
-          <div class="settings-item">
-            <p class="settings-text">Include uppercase</p>
-            <div class="switch-btn switch-on"></div>
-          </div>
-          <div class="settings-item">
-            <p class="settings-text">Include lowercase</p>
-            <div class="switch-btn switch-on"></div>
-          </div>
-          <div class="settings-item">
-            <p class="settings-text">Include numbers</p>
-            <div class="switch-btn switch-on"></div>
-          </div>
-          <div class="settings-item">
-            <p class="settings-text">Include symbols</p>
-            <div class="switch-btn switch-on"></div>
-          </div>
-          <button class="pass-gen-button">GENERATE PASSWORD</button>
-
-
-
+            <div class="settings-item">
+                <p class="settings-text">Include uppercase</p>
+                <div class="switch-btn switch-on" id="uppercase"></div>
+            </div>
+            <div class="settings-item">
+                <p class="settings-text">Include lowercase</p>
+                <div class="switch-btn" id="lowercase"></div>
+            </div>
+            <div class="settings-item">
+                <p class="settings-text">Include numbers</p>
+                <div class="switch-btn" id="numbers"></div>
+            </div>
+            <div class="settings-item">
+                <p class="settings-text">Include symbols</p>
+                <div class="switch-btn switch-on" id="symbols"></div>
+            </div>
+            <button class="pass-gen-button" id="generate">GENERATE PASSWORD</button>
         </div>
-      </div>
     </div>
-  </body>
+</div>
+<script defer src="./index.js">
+
+</script>
+</body>
 </html>
